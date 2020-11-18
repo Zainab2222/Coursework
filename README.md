@@ -38,3 +38,24 @@
                             <!-- This button will be disabled otherwise -->
                         <button disabled ='disabled'class="btn" v-else>Add to Cart</button>
                     </div>
+CONTINUATION
+ </div>  
+            </div>
+            <div v-else>
+               
+                <h2>Checkout</h2>
+                <ul>
+                <li v-for="cart"> {{lesson.subject}}</li>
+            </ul>
+
+                </div>
+                <p>
+                    <strong>Name:</strong>
+                    <!-- This input field is bound to 'firstName' in the 'order' object -->
+                    <input v-model.trim="order.name"/>
+                </p>
+                <p>
+                    <strong>Phone:</strong>
+                    <!-- This input field is bound to 'lastName' in the 'order' object -->
+                    <input v-model.number='order.phone' type="number"/>
+                </p>
