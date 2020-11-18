@@ -78,7 +78,7 @@ CONTINUATION
                 id: [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010],
                 cart: [], // array to store items in shopping cart,
                 location: '',
-                availableInventory: 10,
+                availableInventory: 5,
                 order: {
                     fullName: "",
                     phone: "",
