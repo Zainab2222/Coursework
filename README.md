@@ -39,7 +39,7 @@
                         <button disabled ='disabled'class="btn" v-else>Add to Cart</button>
                     </div>
 CONTINUATION
- </div>  
+           </div>  
             </div>
             <div v-else>
                
@@ -59,3 +59,17 @@ CONTINUATION
                     <!-- This input field is bound to 'lastName' in the 'order' object -->
                     <input v-model.number='order.phone' type="number"/>
                 </p>
+Last part of thebody
+
+  <h2>Order Information</h2>
+                <p>Name:{{order.name}}</p>
+                <p>Phone: {{order.phone}}</p>
+
+                <button v-on:click="submitForm">Checkout</button>
+            </div>
+           
+            </main>
+        </div>
+    </body>
+    
+    
