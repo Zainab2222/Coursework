@@ -115,3 +115,28 @@ CONTINUATION
                     return count;
                 }
             },
+	    computed: {
+                cartItemCount: function(){
+                    return this.cart.length;
+                },
+                // canAddToCart: function(lesson){
+                //     return this.lesson.availableInventory > this.cartItemCount(lesson.id);
+                // },
+
+                //We are sorting lessons by price
+                sortedLessons(){
+                    let lessonsArray = this.lessons.slice(0);
+                    function compare (a, b){
+                        if(a.price > b.price)
+                        return 1;
+                        if (a.price < b.price)
+                        return -1;
+                        return 0;
+                    }
+                    return lessonsArray.sort(compare);
+                }
+              
+            },
+        });
+    </script>
+</html>
