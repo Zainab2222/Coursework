@@ -59,8 +59,8 @@ CONTINUATION
                     <!-- This input field is bound to 'lastName' in the 'order' object -->
                     <input v-model.number='order.phone' type="number"/>
                 </p>
+		
 Last part of thebody
-
   <h2>Order Information</h2>
                 <p>Name:{{order.name}}</p>
                 <p>Phone: {{order.phone}}</p>
@@ -72,4 +72,18 @@ Last part of thebody
         </div>
     </body>
     
-    
+         var webstore = new Vue({
+            el: '#app',
+            data: {
+                showLesson: true,
+                sitename: 'New Lessons',
+                id: [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010],
+                cart: [], // array to store items in shopping cart,
+                location: '',
+                availableInventory: 10,
+                order: {
+                    fullName: "",
+                    phone: "",
+                },
+                lessons: lesson,
+            },
