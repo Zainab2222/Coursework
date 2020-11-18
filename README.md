@@ -95,3 +95,12 @@ CONTINUATION
                 showCheckout: function(){
                     this.showLesson = this.showLesson ? false : true;
                 },
+		submitForm(){
+                    alert('order has been placed')
+                },
+                //Remove canAddToCart from Computed to method since computed does not take parameters, 
+                //We are now working with an array of objects and therefore need to pass the lesson
+                //and its id to identify which lesson we are working with
+                  canAddToCart: function(lesson){
+                    return lesson.availableInventory > this.cartCount(lesson.id);
+                },
