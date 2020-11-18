@@ -104,3 +104,14 @@ CONTINUATION
                   canAddToCart: function(lesson){
                     return lesson.availableInventory > this.cartCount(lesson.id);
                 },
+		//We introduce the cartCount Method to count the number of items of a particular type in the cart
+                cartCount(id){
+                    let count = 0;
+                    for (let i = 0; i < this.cart.length; i++){
+                        if(this.cart[i] === id){
+                            count++
+                        }
+                    }
+                    return count;
+                }
+            },
