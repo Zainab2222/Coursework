@@ -89,3 +89,9 @@ CONTINUATION
                 addToCart: function (lesson) {
                     this.cart.push(lesson.id);
                 },
+             addToCheckOutCart(lesson){
+                    this.addToCheckOutCart.push(lesson);
+                },
+                showCheckout: function(){
+                    this.showLesson = this.showLesson ? false : true;
+                },
