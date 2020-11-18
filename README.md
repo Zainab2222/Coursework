@@ -59,9 +59,7 @@ CONTINUATION
                     <!-- This input field is bound to 'lastName' in the 'order' object -->
                     <input v-model.number='order.phone' type="number"/>
                 </p>
-		
-Last part of thebody
-  <h2>Order Information</h2>
+                <h2>Order Information</h2>
                 <p>Name:{{order.name}}</p>
                 <p>Phone: {{order.phone}}</p>
 
@@ -87,3 +85,7 @@ Last part of thebody
                 },
                 lessons: lesson,
             },
+	     methods:{
+                addToCart: function (lesson) {
+                    this.cart.push(lesson.id);
+                },
