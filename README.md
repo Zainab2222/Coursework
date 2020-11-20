@@ -1,6 +1,4 @@
 # Coursework
-
-
 <html>
     <head>
         <title>Available Lessons</title>
@@ -38,7 +36,6 @@
                             <!-- This button will be disabled otherwise -->
                         <button disabled ='disabled'class="btn" v-else>Add to Cart</button>
                     </div>
-CONTINUATION
            </div>  
             </div>
             <div v-else>
