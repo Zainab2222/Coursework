@@ -1,4 +1,4 @@
-<h1> Coursework <h1>
+Coursework
 <html>
     <head>
         <title>Available Lessons</title>
